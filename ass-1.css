@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../Assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    padding: 100px;
+    margin: 50px;
+    background-color: black;
+}
+#container{
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 400px;
+    background-color: rgba(47, 75, 164, 0.178);
+    border-radius: 50px;
+}
+#star{
+    margin: 10px;
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    background-color: rgba(2, 2, 54, 0.374);
+}
+img{
+    margin: 13px;
+    height: 30px;
+    width: 30px;
+}
+p{
+    color: grey;
+    font-size: 17px;
+    word-spacing: 1px;
+    border-spacing: 2px;
+    line-height: 1.5;
+}
+h1{
+    color: white;
+    font-size: 25px; 
+}
+.blocks{
+    padding: 13px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+    color: grey;
+    background-color: rgb(36, 35, 61);
+    margin: 10px;
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+#submit_button{
+    width: 90%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 19px;
+    color: black;
+    background-color: rgb(243, 102, 8);
+    cursor: pointer;
+}
+#container>.blocks:hover{
+    background-color: rgb(243, 102, 8);
+}
+#submit_button:hover{
+    background-color: white;
+}
+#first_block:hover~#second_block{
+    background-color: white;
+}
+#second_block:hover~#third_block{
+    background-color: white;
+}
+#third_block:hover~#fourth_block{
+    background-color: white;
+}
+#fourth_block:hover~#fifth_block{
+    background-color: white;
+} 
+#fifth_block:hover::before{
+    background-color: white;
+}
